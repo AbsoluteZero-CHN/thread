@@ -12,11 +12,11 @@ public class Main7 {
     /**
      * TODO 这里静态对象永远使用轻量级锁
      * */
-    private static final Lock lock = new Lock();
+    private static Lock lock = new Lock();
 
     public static void main(String[] args) throws InterruptedException {
         Thread.sleep(5000);
-        Lock lock = new Lock();
+//        Lock lock = new Lock();
         lock.hashCode();
         deviation(1000000000, lock);
         light(1000000000, lock);
