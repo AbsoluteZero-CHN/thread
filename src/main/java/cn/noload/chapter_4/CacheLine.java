@@ -2,6 +2,8 @@ package cn.noload.chapter_4;
 
 /**
  * 缓存行测试
+ *
+ * Java8 以后提供了 {@link sun.misc.Contended} 注解来填充对象, 使缓存行不失效
  * @author hao.caosh@ttpai.cn
  * @date 2020-05-20 10:39
  */
